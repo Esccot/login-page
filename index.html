@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign-up/in login page</title>
+    <style>
+      *{
+        font-family: 'poppins', sans-serif;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        min-height: 500px;
+        min-width: 320px;
+        width: 900px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+      }
+
+      .input-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+      }
+
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #fafafa;
+      }
+
+      .sign-up-main-container {
+        background-color:#ff4b2b ;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 15px 15px 0;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .sign-in-container {
+        border-radius: 15px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .input-box{
+        gap: 10px;
+        font-size: 16px;
+      }
+
+      a{
+        margin: 10px 0;
+        font-size: 14px;
+        color: #666;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .sign-in-button{
+        width: 100%;
+        background-color: #ff4b2b;
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        padding: 10px 0;
+        cursor: pointer;
+        font-size: 16px;
+        color: #fff;
+      }
+
+      input[type="email"],input[type="password"]{
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+      .sign-up-container button{
+         background: none;
+         border: 2px solid #fff;
+         border-radius: 20px;
+         padding: 10px 40px;
+         font-weight: bold;
+         font-size: 16px;
+         cursor: pointer;
+         margin-top: 20px ;
+         color: #fff;
+      }
+
+      .sign-up-container h1{
+        margin-top: 10px;
+      }
+
+      .sign-up-container p{
+        color: #fff;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+
+      @media (max-width: 320px) and (max-width:768px){
+        .grid-container{
+          width: 100%;
+          gap: 5px;
+          padding: 10px;
+          scale: 0.9;
+        }
+
+        h1{
+          font-size: 20px;
+        }
+        input, button{
+          width:100%;
+          font-size: 14px;
+        }
+
+        p{
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Sign-in</h1>
+          <div class="input-box">
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+          </div>
+          <a href="#">forgot your password?</a>
+          <button class="sign-in-button">Sign-in</button>
+        </form>
+      </div>
+      <div class="sign-up-main-container">
+        <div class="sign-up-container">
+          <h1>Hello, Friends!</h1>
+          <p>Enter your personal details and start your journey</p>
+          <button>Sign up</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
